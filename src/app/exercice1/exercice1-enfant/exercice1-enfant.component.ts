@@ -8,7 +8,7 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 export class Exercice1EnfantComponent implements OnInit {
 
   childCompteur: number = 0;
-  @Output() changeChildCompteur: EventEmitter = new EventEmitter();
+  @Output() changeChildCompteur: EventEmitter<{}> = new EventEmitter<{}>();
   @Input() parentCompteur: string;
 
   constructor() { }
